@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
     
+    
 
 <head>        
         
@@ -22,6 +23,9 @@
         <link href="css/mmenu.css" rel="stylesheet" type="text/css" />
         <link href="css/mmenu.positioning.css" rel="stylesheet" type="text/css" />
         
+        <!-- Responsive Table -->
+        <link rel="stylesheet" type="text/css" href="css/responsivetable.css" />
+        
         <!-- Stylesheet -->
         <link href="style.css" rel="stylesheet" type="text/css" />
         
@@ -31,9 +35,9 @@
         <script src="js/html5shiv.min.js"></script>
         <script src="js/respond.min.js"></script>
         <![endif]-->
+        
     </head>
-
-
+    
     <body>
         
         <!-- Start: Header Section -->
@@ -46,8 +50,8 @@
                                 <div class="navbar-header">
                                     <div class="navbar-brand">
                                         <h1>
-                                            <a href="index-2.html">
-                                                <img src="images/libsofia-logo.png" alt="LIBRERIA SOFIA" />
+                                            <a href="index.html">
+                                                <img src="images/libsofia-logo-v1.jpg.jpg" alt="LIBRERIA SOFIA" />
                                             </a>
                                         </h1>
                                     </div>
@@ -66,8 +70,59 @@
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="topbar-links">
-                                               
-                                                
+                                                <a href="signin.html"><i class="fa fa-lock"></i>Ingresar / Registrarse</a>
+                                                <span>|</span>
+                                                <div class="header-cart dropdown">
+                                                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <small>0</small>
+                                                    </a>
+                                                    <div class="dropdown-menu cart-dropdown">
+                                                        <ul>
+                                                            <li class="clearfix">
+                                                                <img src="images/header-cart-1.jpg" alt="cart item" />
+                                                                <div class="item-info">
+                                                                    <div class="name">
+                                                                        <a href="#">Yo antes de ti</a>
+                                                                    </div>
+                                                                    <div class="author"><strong>Autor:</strong>  Jojo Moyes</div>
+                                                                    <div class="price">1 X $65.000</div>
+                                                                </div>
+                                                                <a class="remove" href="#"><i class="fa fa-trash-o"></i></a>
+                                                            </li>
+                                                            <li class="clearfix">
+                                                                <img src="images/header-cart-2.jpg" alt="cart item" />
+                                                                <div class="item-info">
+                                                                    <div class="name">
+                                                                        <a href="#">IKIGAI ESENCIAL</a>
+                                                                    </div>
+                                                                    <div class="author"><strong>Autor:</strong> Héctor García</div>
+                                                                    <div class="price">1 X $47.000</div>
+                                                                </div>
+                                                                <a class="remove" href="#"><i class="fa fa-trash-o"></i></a>
+                                                            </li>
+                                                            <li class="clearfix">
+                                                                <img src="images/header-cart-3.webp" alt="cart item" />
+                                                                <div class="item-info">
+                                                                    <div class="name">
+                                                                        <a href="#">Revolcadas</a>
+                                                                    </div>
+                                                                    <div class="author"><strong>Autor:</strong> Indira Rodriguez</div>
+                                                                    <div class="price">1 X $45.000</div>
+                                                                </div>
+                                                                <a class="remove" href="#"><i class="fa fa-trash-o"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="cart-total">
+                                                            <div class="title">SubTotal</div>
+                                                            <div class="price">$157.000</div>
+                                                        </div>
+                                                        <div class="cart-buttons">
+                                                            <a href="cart.html" class="btn btn-dark-gray">Ver carro</a>
+                                                            <a href="checkout.html" class="btn btn-primary">Comprar</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -76,20 +131,20 @@
                                     <ul class="nav navbar-nav">
                                         <li class="dropdown active">
                                             <a data-toggle="dropdown" class="dropdown-toggle disabled" href="index.html">Inicio</a>
+                                          
+                                        </li>
+                                        <li class="dropdown">
+                                            <a data-toggle="dropdown" class="dropdown-toggle disabled" href="books-media-list-view.html">Libros</a>
                                             
                                         </li>
-                                        <li class="dropdown">
-                                            <a data-toggle="dropdown" class="dropdown-toggle disabled" href="books-media-list-view.php">Libros</a>
-                                           
-                                        </li>
-                                       >
+                                  
+                                       
                                         <li class="dropdown">
                                             <a data-toggle="dropdown" class="dropdown-toggle disabled" href="blog.html">Promociones</a>
-
-                                            <li><a href="contact.html">Contactenos</a></li>
-
-                                            <li><a href="checkout.html">Comprar</a></li>
-                                        
+                                            
+                                        </li>
+                                 
+                                        <li><a href="contact.html">Contactenos</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -99,28 +154,24 @@
                             <div id="mobile-menu">
                                 <ul>
                                     <li class="mobile-title">
-                                        <h4>Navigación</h4>
+                                        <h4>Navegacion</h4>
                                         <a href="#" class="close"></a>
                                     </li>
                                     <li>
                                         <a href="index.html">Inicio</a>
-                                        
                                     </li>
                                     <li>
                                         <a href="books-media-list-view.html">Libros</a>
-                                       
+                                      
                                     </li>
+                                  
                                    
                                     <li>
                                         <a href="blog.html">Promociones</a>
-                                       
+                                      
                                     </li>
                                   
                                     <li><a href="contact.html">Contactenos</a></li>
-
-                                    <li><a href="checkout.html">Comprar</a></li>
-
-
                                 </ul>
                             </div>
                         </div>
@@ -134,119 +185,104 @@
         <section class="page-banner services-banner">
             <div class="container">
                 <div class="banner-header">
-                    <h2>Registrarse</h2>
+                    <h2>Carrito de compras</h2>
                     <span class="underline center"></span>
-                    
+                    <p class="lead"> </p>
                 </div>
                 <div class="breadcrumb">
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
-                        <li>Registrarse</li>
+                        <li>Carrito de compras</li>
                     </ul>
                 </div>
             </div>
         </section>
         <!-- End: Page Banner -->
         <!-- Start: Cart Section -->
-        <div id="content" class="site-content">
-            <div id="primary" class="content-area">
-                <main id="main" class="site-main">
-                    <div class="signin-main">
-                        <div class="container">
-                            <div class="woocommerce">
-                                <div class="woocommerce-login">
-                                    <div class="company-info signin-register">
-                                        <div class="col-md-5 col-md-offset-1 border-dark-left">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="company-detail bg-dark margin-left">
-                                                        <div class="signin-head">
-                                                            <h2>Iniciar sesion</h2>
-                                                            <span class="underline left"></span>
-                                                        </div>
-                                                        <form method="post" action="login.php">
-                                                            <p class="form-row form-row-first input-required">
-                                                                <label>
-                                                                    <span class="first-letter">Nombre de usuario</span>  
-                                                                    <span class="second-letter">*</span>
-                                                                </label>
-                                                                <td><input type="text" name="username" class="textInput" required min="0" ></td>
-                                                             </p>
-                                                            <p class="form-row form-row-last input-required">
-                                                                
-                                                                <td><input type="password" name="password" class="textInput" required min="0"  ></td>
-                                                            </p>
-                                                            <div class="clear"></div>
-                                                            <div class="password-form-row">
-                                                                <p class="form-row input-checkbox">
-                                                                    <input type="checkbox" value="forever" id="rememberme" name="rememberme">
-                                                                    <label class="inline" for="rememberme">Recordarme</label>
-                                                                </p>
-                                                                
-                                                            </div>
-                                                            <td><input type="submit" name="login_btn" class="Log In"></td>
-                                                            <div class="clear"></div>
+     
+                                <div class="col-md-12">
+                                    <div class="page type-page status-publish hentry">
+                                        <div class="entry-content">
+                                            <div class="woocommerce table-tabs" id="responsiveTabs">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="active"><b class="arrow-up"></b><a data-toggle="tab" href="#sectionA">Mi compra</a></li>
+                                                   
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div id="sectionA" class="tab-pane fade in active">
+                                                        <form method="post" action="http://libraria.demo.presstigers.com/cart-page.html">
+                                                            <table class="table table-bordered shop_table cart">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="product-name">&nbsp;</th>
+                                                                        <th class="product-name"></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="cart_item">
+                                                                        <td data-title="cbox" class="product-cbox">
+                                                                            <span>
+                                                                                <input type="checkbox" id="cbox3" value="first_checkbox">
+                                                                            </span>
+                                                                        </td>
+                                                                        <td data-title="Product" class="product-name">
+                                                                            <span class="product-thumbnail">
+                                                                                <a href="#"><img src="images/cart/cart-product-1.jpg" alt="cart-product-1"></a>
+                                                                            </span>
+                                                                            <span class="product-detail">
+                                                                                <a href="#"><strong>The Great Gatsby</strong></a>
+                                                                                <span><strong>Autor:</strong> F. Scott Fitzgerald</span>
+                                                                                <span><strong>ISBN:</strong> 9781581573268</span>
+                                                                                <span><strong>precio:</strong> <em>$10</em></span>
+                                                                            </span>
+                                                                        </td>
+                                                                                                                                              
+                                                                    <tr class="cart_item">
+                                                                        <td>
+                                                                            <span data-title="cbox" class="product-cbox">
+                                                                                <input type="checkbox" id="cbox1" value="first_checkbox">
+                                                                            </span>
+                                                                        </td>
+                                                                        <td data-title="Product" class="product-name">
+                                                                            <span class="product-thumbnail">
+                                                                                <a href="#"><img src="images/cart/cart-product-2.jpg" alt="cart-product-2"></a>
+                                                                            </span>
+                                                                            <span class="product-detail">
+                                                                                <a href="#"><strong>The Great Gatsby</strong></a>
+                                                                                <span><strong>Autor:</strong> F. Scott Fitzgerald</span>
+                                                                                <span><strong>ISBN:</strong> 9781581573268</span>
+                                                                                <span><strong>Precio:</strong> <em>$10</em></span>
+                                                                            </span>
+                                                                        </td>
+                                                                      
+                                                                    <tr class="cart_item">
+                                                                        <td>
+                                                                            <span data-title="cbox" class="product-cbox">
+                                                                                <input type="checkbox" id="cbox2" value="first_checkbox">
+                                                                            </span>
+                                                                        </td>
+                                                                        <td data-title="Product" class="product-name">
+                                                                            <span class="product-thumbnail">
+                                                                                <a href="#"><img src="images/cart/cart-product-3.jpg" alt="cart-product-3"></a>
+                                                                            </span>
+                                                                            <span class="product-detail">
+                                                                                <a href="#"><strong>The Great Gatsby</strong></a>
+                                                                                <span><strong>Autor:</strong> F. Scott Fitzgerald</span>
+                                                                                <span><strong>ISBN:</strong> 9781581573268</span>
+                                                                                <span><strong>Precio:</strong> <em>$10</em></span>
+                                                                            </span>
+                                                                        </td>
+                                                                </tbody>
+                                                            </table>
                                                         </form>
                                                     </div>
+                                                    <div class="cart-buttons">
+                                                       
+                                                        <a href="checkout.html" class="btn btn-primary">Comprar</a>
+                                                    </div>    
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-5 border-dark new-user">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="company-detail new-account bg-light margin-right">
-                                                        <div class="new-user-head">
-                                                            <h2>Crear cuenta usuario admin</h2>
-                                                            <span class="underline left"></span>
-                                                            
-                                                        </div>
-                                                      
-                                                              <form method="post" action="register.php"> 
-                                                            <p class="form-row form-row-first input-required">
-                                                                <label>
-                                                                    <span class="first-letter">Correo electrónico</span>  
-                                                                    <span class="second-letter"></span>
-                                                                </label>
-                                                                <td><input type="email" name="email" class="textInput" required min="0" ></td>
-                                                            </p>
-                                                            
-                                                            
-                                                            <p class="form-row form-row-first input-required">
-                                                                <label>
-                                                                    <span class="first-letter">Nombre </span>  
-                                                                    <span class="second-letter"></span>
-                                                                </label>
-                                                                <td><input type="text" name="username" class="textInput" required min="0" ></td>
-                                                            </p>
-                                                            
-                                                 
-                                                          
-                                                            
-                                                            
-                                                           
-                                                            
-                                                            <p class="form-row input-required">
-                                                                <label>
-                                                                    <span class="first-letter">Contraseña</span>  
-                                                                    <span class="second-letter">*</span>
-                                                                </label>
-                                                                <td><input type="password" name="password" class="textInput" required min="0"  ></td>
-                                                            </p>          
-                                                            <p class="form-row input-required">
-                                                                <label>
-                                                                    <span class="first-letter">Confirmar Contraseña</span>  
-                                                                    <span class="second-letter">*</span>
-                                                                </label>
-                                                                <td><input type="password" name="password2" class="textInput"required min="0" ></td>
-                                                            </p>                                                                        
-                                                            <div class="clear"></div>
-                                                            <td><input type="submit" name="register_btn" class="Register"></td>
-                                                            <div class="clear"></div>
-                                                        </form> 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </div><!-- .entry-content -->
                                     </div>
                                 </div>
                             </div>
@@ -257,8 +293,8 @@
         </div>
         <!-- End: Cart Section -->
         
-        <!-- Start: Social Network -->
-        <section class="social-network section-padding">
+          <!-- Start: Social Network -->
+          <section class="social-network section-padding">
             <div class="container">
                 <div class="center-content">
                     <h2 class="section-title">SÍGANOS</h2>
@@ -347,7 +383,8 @@
                                 <span class="underline left"></span>
                                 <div class="menu-quick-links-container">
                                     <ul id="menu-quick-links" class="menu">
-                                        <li><a href="#">Noticias</a></li>
+                                      
+                                        <li><a href="#">Historia</a></li>
                                         <li><a href="#">Conoce nuestro equipo</a></li>
                                     </ul>
                                 </div>
@@ -362,7 +399,7 @@
                                     <time datetime="2017-02-13">Lunes a Viernes de 8:30 AM a 6:00 PM.</time>
                                     <time datetime="2017-02-13">Sábado de 9:00 AM a 5:00 PM.</time>
                                     <ul>
-                                        
+                                     
                                     </ul>
                                 </div>
                             </div>			
@@ -390,12 +427,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="footer-text col-md-3">
-                         
+                           
                         </div>
                         <div class="col-md-9 pull-right">
                             <ul>
                                 <li><a href="index.html">Inicio</a></li>
-                                <li><a href="books-media-list-view.php">Libros</a></li>
+                                <li><a href="books-media-list-view.html">Libros</a></li>
                                 <li><a href="blog.html">Promociones</a></li>
                                 <li><a href="contact.html">Contactenos</a></li>
                             </ul>
@@ -455,8 +492,8 @@
         <script type="text/javascript" src="js/bxslider.min.js"></script>
         
         <!-- Custom Scripts -->
-        <script type="text/javascript" src="js/main.js"></script>
-
+        <script type="text/javascript" src="js/main.js"></script> 
+        
     </body>
 
 
